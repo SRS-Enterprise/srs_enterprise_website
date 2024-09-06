@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <title>SRS Enterprise</title>
+
+    <!-- bootstrap css -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google symbols -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Google fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- swipper css -->
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Local css -->
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <!-- Email JS -->
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "ZzPhud1tyGlSRcR51",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#home">Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>  fixed-top-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="SRS Consultancy" id="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Our Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="offcanvas bg-dark offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title text-bg-white" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5> -->
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#About"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Services"
+                  >Our Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Projects"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Contact"
+                  >Contact</a
+                >
+              </li>
+
+              <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="card m-auto" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div> -->
+    <main>
+      <!-- ==================== HERO =================== -->
+
+      <!-- <section
+        class="hero herobg container-fluid w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white fs-1"
+      >
+        <div class="hero-content">
+          <h1>WE ARE THE BEST CONSTRUCTION COMPANY</h1>
+          <button type="button" class="btn btn-light">View our projects</button>
+        </div>
+      </section> -->
+
+      <section class="hero herobg" id="Home">
+        <div class="overlay-blue"></div>
+        <div class="container h-100">
+          <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-lg-12 col-xl-12">
+              <div class="hero-content">
+                <h1>YOUR TRUSTED WATERPROOFING</h1>
+                <h1 id="hero-blue-h1">EXPERTS YOU CAN TRUST</h1>
+                <p>Residential | Commercial | Industrial</p>
+                <a href="#Services">
+                  <button type="button" class="btn btn-primary">
+                    Discover Our Services
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================ ABOUT ================ -->
+
+      <section class="about" id="About">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+              <div class="abt-head text-center">
+                <h2>Why Choose Us</h2>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores omnis accusamus eveniet nihil optio maiores?
+                </p> -->
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row g-2 g-sm-2 g-md-2 g-lg-4 justify-content-center abt-row"
+          >
+            <div class="col-12 col-sm-10 col-md-4 col-lg-4">
+              <div class="card text-dark text-center bg-white">
+                <div class="card-body abt-card">
+                  <i class="fa-solid fa-paint-roller"></i>
+                  <h3 class="card-title">Expert Craftsmanship</h3>
+                  <p class="card-text">
+                    Our team of professionals ensures top-quality waterproofing
+                    solutions for every project.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-4 col-lg-4">
+              <div class="card text-dark text-center bg-white">
+                <div class="card-body abt-card">
+                  <i class="fa-solid fa-lightbulb bulb-icon"></i>
+                  <h3 class="card-title">Innovative Techniques</h3>
+                  <p class="card-text">
+                    We utilize the latest technologies to provide efficient and
+                    long-lasting protection
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-4 col-lg-4">
+              <div class="card text-dark text-center bg-white">
+                <div class="card-body abt-card">
+                  <i class="fa-solid fa-handshake hand-icon"></i>
+                  <h3 class="card-title">Customer Satisfaction</h3>
+                  <p class="card-text">
+                    We prioritize your satisfaction with reliable service and
+                    exceptional results.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== SERVICES ================= -->
+
+      <section class="services" id="Services">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="service-head text-center">
+                <h2>Our Services</h2>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores omnis accusamus eveniet nihil optio maiores?
+                </p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-2 g-sm-2 g-md-2 g-lg-4">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card text-center serv-card">
+                <div class="card-body">
+                  <!-- <span class="material-symbols-outlined">home</span> -->
+                  <h5 class="card-title">Bathroom Waterproofing</h5>
+                  <p class="card-text">
+                    Ensure your bathrooms remain dry and leak-free with our
+                    expert waterproofing solutions.
+                  </p>
+                  <!-- <a href="#" class="card-link">Card link</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <!-- <span class="material-symbols-outlined">home</span> -->
+                  <h5 class="card-title">Rooftop Waterproofing</h5>
+                  <p class="card-text">
+                    Protect your building's roof from water damage with our
+                    top-quality rooftop waterproofing services.
+                  </p>
+                  <!-- <a href="#" class="card-link">Card link</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <!-- <span class="material-symbols-outlined">home</span> -->
+                  <h5 class="card-title">Retaining Wall Waterproofing</h5>
+                  <p class="card-text">
+                    Keep your retaining walls strong and moisture-resistant with
+                    our specialized waterproofing treatments.
+                  </p>
+                  <!-- <a href="#" class="card-link">Card link</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <!-- <span class="material-symbols-outlined">home</span> -->
+                  <h5 class="card-title">Planter Boxes Waterproofing</h5>
+                  <p class="card-text">
+                    Preserve the integrity of your planter boxes and prevent
+                    water seepage with our reliable waterproofing services.
+                  </p>
+                  <!-- <a href="#" class="card-link">Card link</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <!-- <span class="material-symbols-outlined">home</span> -->
+                  <h5 class="card-title">Balcony Waterproofing</h5>
+                  <p class="card-text">
+                    Enjoy a leak-free balcony all year round with our
+                    professional waterproofing services.
+                  </p>
+                  <!-- <a href="#" class="card-link">Card link</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <!-- <span class="material-symbols-outlined">home</span> -->
+                  <h5 class="card-title">Basement Waterproofing</h5>
+                  <p class="card-text">
+                    Safeguard your basement from water intrusion and maintain a
+                    dry, usable space with our comprehensive waterproofing
+                    solutions.
+                  </p>
+                  <!-- <a href="#" class="card-link">Card link</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LATEST PROJECTS ================== -->
+
+      <section class="projects" id="Projects">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="proj-head text-center pb-5">
+                <h2>Latest Projects</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="g-4 pb-5 swiper">
+            <div class="slide-content mx-5">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <img src="img/2.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <img src="img/2.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <img src="img/2.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <img src="img/2.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <img src="img/2.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next proj-btn"></div>
+            <div class="swiper-button-prev proj-btn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- Button trigger modal -->
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable modal-xl bg-dark">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Project Name
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/2.png" alt="" />
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odit, excepturi fuga possimus quaerat ad quae ut soluta
+                    nihil voluptatibus eos in dolores voluptatem? Debitis
+                    aspernatur hic dolor quidem beatae aliquid facere, optio,
+                    officia velit expedita corporis dignissimos doloremque a
+                    ipsum repellat error nam itaque adipisci, molestiae
+                    excepturi natus unde recusandae odio? Blanditiis perferendis
+                    quae reiciendis dolore doloremque veritatis qui nulla modi
+                    rerum quia ea a, dignissimos excepturi expedita
+                    exercitationem libero velit temporibus ex maiores atque
+                    labore eius! Eveniet, modi officiis! Dolores consectetur
+                    tempore distinctio modi laboriosam mollitia hic, molestiae
+                    error itaque, officiis molllat error nam itaque adipisci,
+                    molestiae excepturi natus unde recusandae odio? Blanditiis
+                    perferendis quae reiciendis dolore doloremque veritatis qui
+                    nulla modi rerum quia ea a, dignissimos excepturi expedita
+                    exercitationem libero velit temporibus ex maiores atque
+                    labore eius! Eveniet, modi officiis! Dolores consectetur
+                    tempore distinctio modi laboriosam mollitia hic, molestiae
+                    error itaque, officiis molllat error nam itaque adipisci,
+                    molestiae excepturi natus unde recusandae odio? Blanditiis
+                    perferendis quae reiciendis dolore doloremque veritatis qui
+                    nulla modi rerum quia ea a, dignissimos excepturi expedita
+                    exercitationem libero velit temporibus ex maiores atque
+                    labore eius! Eveniet, modi officiis! Dolores consectetur
+                    tempore distinctio modi laboriosam mollitia hic, molestiae
+                    error itaque, officiis molllat error nam itaque adipisci,
+                    molestiae excepturi natus unde recusandae odio? Blanditiis
+                    perferendis quae reiciendis dolore doloremque veritatis qui
+                    nulla modi rerum quia ea a, dignissimos excepturi expedita
+                    exercitationem libero velit temporibus ex maiores atque
+                    labore eius! Eveniet, modi officiis! Dolores consectetur
+                    tempore distinctio modi laboriosam mollitia hic, molestiae
+                    error itaque, officiis molestias libero quos, velit impedit
+                    esse laborum eligendi.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <!-- <button type="button" class="btn btn-primary">
+                    Understood
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="proj-cards row row-cols-md-4 g-3 justify-content-center">
+            <div class="col">
+              <div class="card">
+                <img src="/img/2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body proj-btn">
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/img/2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body proj-btn">
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/img/2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body proj-btn">
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="row justify-content-center">
+            <div class="col-2">
+              <a href="#" class="btn btn-primary d-grid">View all</a>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- ================== we believe =============== -->
+
+      <section class="addons">
+        <div class="container">
+          <div class="card mb-3">
+            <div class="row g-4 g-lg-5 justify-content-center">
+              <div class="col-8 col-md-8 col-lg-6 addon-img">
+                <img
+                  src="/img/addons_img.webp"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-12 col-lg-6 addon-text">
+                <div class="card-body">
+                  <h2 class="card-title">
+                    Protecting Your Property with Cutting-Edge Waterproofing
+                  </h2>
+                  <p class="card-text">
+                    Safeguard your home or business from water damage with our
+                    advanced waterproofing solutions. We use the latest
+                    technology and materials to ensure lasting protection and
+                    peace of mind.
+                  </p>
+                </div>
+                <div class="addons-list row g-0">
+                  <h5>We Provide</h5>
+                  <div class="col-6">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <span class="material-symbols-outlined">
+                          check_indeterminate_small </span
+                        >Sealant Solutions
+                      </li>
+                      <li class="list-group-item">
+                        <span class="material-symbols-outlined">
+                          check_indeterminate_small </span
+                        >Membrane Installations
+                      </li>
+                      <li class="list-group-item">
+                        <span class="material-symbols-outlined">
+                          check_indeterminate_small </span
+                        >Drainage Systems
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <span class="material-symbols-outlined">
+                          check_indeterminate_small </span
+                        >Structural Waterproofing
+                      </li>
+                      <li class="list-group-item">
+                        <span class="material-symbols-outlined">
+                          check_indeterminate_small </span
+                        >Exterior Sealing
+                      </li>
+                      <li class="list-group-item">
+                        <span class="material-symbols-outlined">
+                          check_indeterminate_small </span
+                        >Leak Prevention
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============= FAQ ================= -->
+
+      <section class="faq">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="faq-head text-center">
+                <h2>Frequently Asked Questions</h2>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores omnis accusamus eveniet nihil optio maiores?
+                </p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      What is waterproofing and why is it important?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Waterproofing involves applying protective treatments to
+                      surfaces to prevent water from penetrating and causing
+                      damage. It is crucial for maintaining the structural
+                      integrity of buildings, preventing mold growth, and
+                      ensuring a dry, safe environment.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      How do I know if my property needs waterproofing?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Signs that your property may need waterproofing include
+                      persistent dampness, water stains on walls, musty odors,
+                      or visible mold growth. If you notice any of these issues,
+                      it's best to consult a professional to assess the
+                      situation.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      What types of waterproofing solutions do you offer?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      We offer a range of solutions including sealant
+                      applications, membrane installations, drainage systems,
+                      and structural waterproofing, tailored to address specific
+                      needs and protect various areas of your property.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      How much does waterproofing cost?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      The cost of waterproofing varies based on the size of the
+                      area, the type of solution used, and the extent of the
+                      problem. We offer free consultations and detailed quotes
+                      to provide an accurate estimate for your specific needs.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== CONTACT =============== -->
+
+      <section class="contact" id="Contact">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+              <div class="contact-head text-center">
+                <h2>
+                  Connect with Our Specialists <br />
+                  for Customized Waterproofing Services
+                </h2>
+                <ul class="list-group list-group-horizontal d-flex">
+                  <div class="row justify-content-center w-100">
+                    <li class="col-6 col-sm-3 list-group-item">
+                      <span class="material-symbols-outlined">check_circle</span
+                      >Professional Staff
+                    </li>
+                    <li class="col-6 col-sm-3 list-group-item">
+                      <span class="material-symbols-outlined">check_circle</span
+                      >100% Satisfaction
+                    </li>
+                    <li class="col-6 col-sm-3 list-group-item">
+                      <span class="material-symbols-outlined">check_circle</span
+                      >Accurate Testing
+                    </li>
+                    <li class="col-6 col-sm-3 list-group-item">
+                      <span class="material-symbols-outlined">check_circle</span
+                      >Transparent Pricing
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-2 g-lg-4 justify-content-center">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-6">
+              <div class="card main-form">
+                <div class="form-head">
+                  <h5>Let’s Secure Your Property Against Water</h5>
+                  <!-- <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit ab, necessitatibus magni iusto exercitationem ccm!
+                  </p> -->
+                </div>
+                <form class="row g-3" onsubmit="return false">
+                  <div class="col-lg-6">
+                    <label for="validationDefault01" class="form-label"
+                      >Name <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      placeholder="Please enter your full name"
+                      class="form-control"
+                      id="validationDefault01"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label"
+                      >Phone No. <span>*</span></label
+                    >
+                    <input
+                      type="tel"
+                      placeholder="Please enter your phone number"
+                      class="form-control"
+                      id="validationDefault02"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationDefaultUsername" class="form-label"
+                      >Email <span>*</span></label
+                    >
+                    <div class="input-group">
+                      <input
+                        type="email"
+                        placeholder="Please enter your email here"
+                        class="form-control"
+                        id="validationDefaultUsername"
+                        aria-describedby="inputGroupPrepend2"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="validationDefault04" class="form-label"
+                      >Service <span>*</span></label
+                    >
+                    <select
+                      class="form-select"
+                      id="validationDefault04"
+                      required
+                    >
+                      <option selected disabled value="">Select service</option>
+                      <option>Bathroom waterproofing</option>
+                      <option>Rooftop waterproofing</option>
+                      <option>Retaining Wall waterproofing</option>
+                      <option>Planter Boxes waterproofing</option>
+                      <option>Balcony waterproofing</option>
+                      <option>Basement waterproofing</option>
+                    </select>
+                  </div>
+                  <div class="mb-1">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Additional information</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Write us message here..."
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      style="resize: none"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck2"
+                        required
+                      />
+                      <label class="form-check-label" for="invalidCheck2">
+                        Agree to <a href="#">terms and conditions</a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      class="btn btn-primary d-grid form-btn"
+                      type="submit"
+                      onclick="sendEmail()"
+                    >
+                      Submit request
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+              <div class="card contact-side-box">
+                <div class="card-body" id="contact-card-body">
+                  <h5 class="card-title">Contact</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <p>OUR LOCATION</p>
+                      <address>Kolkata, West Bengal, India</address>
+                    </li>
+
+                    <li class="list-group-item">
+                      <p>QUICK CONTACT</p>
+                      <p>
+                        Call Us : (+91) 86370 34805 <br />
+                        Email : srsenterprise907@gmail.com
+                      </p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>OPENING HOURS</p>
+                      <p>
+                        Monday - Friday <br />
+                        09:00 AM - 06:00 PM
+                      </p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>
+                        Do You Have Any Question, Just Contact Us To Get Help!
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 px-3">
+                  <a href="#Contact" class="btn btn-primary d-grid contact-btn"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== FOOTER ============== -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row justify-content-between mb-5">
+            <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+              <ul class="list-group foot-comp-details">
+                <li class="list-group-item">
+                  <!-- <h3>SRS Enterprise</h3> -->
+                  <img
+                    src="/img/logo.png"
+                    alt="SRS Enterprise"
+                    class="foot-logo"
+                  />
+                </li>
+                <li class="list-group-item">
+                  <p>
+                    Protecting your property with our professional waterproofing
+                    expertise.
+                  </p>
+                </li>
+                <li class="list-group-item social-icon-list">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-google"></i>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 offset-lg-1 mb-1 foot-link-col"
+            >
+              <!-- <strong>Company</strong> -->
+              <ul class="list-group">
+                <li class="list-group-item px-0">
+                  <strong>Company</strong>
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="#">About</a>
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="#">Projects</a>
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="#">Gallery</a>
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 foot-link-col"
+            >
+              <!-- <strong>Quick links</strong> -->
+              <ul class="list-group">
+                <li class="list-group-item px-0">
+                  <strong>Quick links</strong>
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="#">Terms & Conditions</a>
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="#">Privacy policy</a>
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="list-group-item px-0">
+                  <a href="#">Help</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-md-12 col-lg-3 col-xl-3 foot-link-col foot-addr"
+            >
+              <ul class="list-group">
+                <!-- <strong>Office address:</strong> -->
+                <li class="list-group-item px-0">
+                  <strong>Office address:</strong>
+                </li>
+                <li class="list-group-item px-0">
+                  <address>Kolkata, West Bengal, India</address>
+                </li>
+                <li class="list-group-item px-0">srsenterprise907@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <hr style="color: white" />
+          <div class="row text-center">
+            <div class="col-12" id="copyright">
+              <p>Copyright &copy; 2024 SRS Enterprise | All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- bootstrap js -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swipper js -->
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- local js -->
+
+    <script src="js/main.js"></script>
+
+    <!-- Email js -->
+  </body>
+</html>

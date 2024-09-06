@@ -1,0 +1,86 @@
+@media only screen and (max-width: 1199px) {
+    .hero .container .hero-content h1{
+        font-size: 3.5rem;
+    }
+    .addons .container .addon-text{
+        margin-top: 2.5rem;
+    }
+    
+    /* .addons .container .card-body{
+        padding: 0 0 4rem 0;
+    } */
+}
+
+@media only screen and (max-width: 991px) {
+    
+    .services .container .card .card-body{
+        padding: 2rem 1.5rem;
+    }
+    .addons .addon-text .card-body{
+        padding-bottom: 2rem;
+    }
+    .addons .container .addon-img{
+        width: 100%;
+        /* height: 200px; */
+    }
+    .addons .container .addon-img img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .footer .container .foot-addr{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .hero .container .hero-content h1{
+        font-size: 3rem;
+    }
+    .about .container .abt-card{
+        padding: 2.5rem 2rem;
+    }
+    .services .container .card .card-body{
+        padding: 2.5rem 2rem;
+    }
+    .faq{
+        /* margin-bottom: 4rem; */
+    }
+    .faq .container .accordion .accordion-item button{
+        padding: 1rem 1.5rem;
+    }
+    .contact{
+        padding: 4rem 0;
+    }
+    .footer .container .foot-link-col ul>li a{
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    nav .container #logo{
+        width: 100px;
+    }
+    
+    .hero .container .hero-content h1{
+        font-size: 2.25rem;
+    }
+    .about .container .abt-card{
+        padding: 3rem 2rem;
+    }
+    .about .container .abt-head{
+        padding-bottom: 1rem;
+    }
+    .services .container .service-head{
+        padding-bottom: 1rem;
+    }
+    .faq .container .accordion .accordion-item {
+        margin-bottom: .75rem;
+    }
+    .contact .container .main-form {
+        padding: 2rem 2rem;
+    }
+    .contact .container .contact-side-box {
+        padding: 2rem 1rem;
+    }
+}
